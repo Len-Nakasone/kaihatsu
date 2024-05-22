@@ -1,6 +1,6 @@
-  package com.example.demo;
+package com.example.demo;
  
-  import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ import jakarta.websocket.server.PathParam;
     @RequestMapping("/memo")
     public ModelAndView index(ModelAndView mv) {
       mv.setViewName("Memo");
-      mv.addObject("title", "Todo");
+      mv.addObject("title", "You Can Do It!!");
       mv.addObject("data", Memocontroller.data);
       return mv;
     }
